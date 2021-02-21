@@ -9,7 +9,7 @@ const sliderContainer = document.getElementById('sliders');
 let sliders = [];
 
 
-
+//api key
 const KEY = '17321528-d41904a4da995a6d119d99cf7';
 
 // show images 
@@ -17,6 +17,7 @@ const showImages = (images) => {
   imagesArea.style.display = 'block';
   gallery.innerHTML = '';
   toggleSpinner();
+
   // show gallery
   galleryHeader.style.display = 'flex';
   images.forEach(image => {
@@ -55,7 +56,7 @@ const selectItem = (event, img) => {
   }
 }
 
-// Selected Images
+// Select Images
 const selectedImgCounter = document.getElementById('selected-imgCounter');
 const selectedImgCounterFunc = () => {
   selectedImgCounter.innerText = sliders.length;
